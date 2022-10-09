@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TrashMiniGames : MonoBehaviour
+public class JumpMiniGames : MonoBehaviour
 {
+    public int scene;
+
     void OnTriggerEnter2D(Collider2D colli)
     {
         if (colli.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(scene);
         }
     }
 }

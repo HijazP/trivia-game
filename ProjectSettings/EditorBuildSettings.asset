@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Trash Mini Game.unity
     guid: 1dcbe76e971fddc44abf7155aa3da299
   - enabled: 1
+    path: Assets/Scenes/Triva Mini Game.unity
+    guid: be88ea17c8d7ead4cb2cf46f83bef874
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: a4b79307b24e2b6488c8d19d03a38e57
   - enabled: 1
