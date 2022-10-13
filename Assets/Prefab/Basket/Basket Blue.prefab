@@ -88,6 +88,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basket Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 1977715543257146091, guid: e1a0874e5d253df45862bf7e426c6993,
+        type: 3}
+      propertyPath: m_TagString
+      value: Basket_Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 4948570811698144171, guid: e1a0874e5d253df45862bf7e426c6993,
         type: 3}
       propertyPath: m_Color.b

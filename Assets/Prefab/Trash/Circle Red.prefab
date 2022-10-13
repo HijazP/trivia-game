@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5130669252418361034}
   - component: {fileID: 5234518812826908845}
   - component: {fileID: 8972090740677892203}
+  - component: {fileID: 5586713007004510040}
   m_Layer: 0
   m_Name: Circle Red
-  m_TagString: Untagged
+  m_TagString: Trash_Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,3 +119,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783122ee37c3a7b4a92a97087f68d668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &5586713007004510040
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815680793240315610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

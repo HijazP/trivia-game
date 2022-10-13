@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle Green
       objectReference: {fileID: 0}
+    - target: {fileID: 4815680793240315610, guid: 565a932ca9352cd4d92973a6cc20f66b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trash_Green
+      objectReference: {fileID: 0}
     - target: {fileID: 5130669252418361034, guid: 565a932ca9352cd4d92973a6cc20f66b,
         type: 3}
       propertyPath: m_Color.g

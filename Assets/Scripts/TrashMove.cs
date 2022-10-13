@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrashMove : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float speed = 10f;
+    private float speed = 3f;
 
     void Awake()
     {
@@ -15,5 +15,18 @@ public class TrashMove : MonoBehaviour
     void Start()
     {
         rb.velocity = -transform.up * speed;
+    }
+
+    public void DestroyTrash()
+    {
+        Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D colli)
+    {
+        if (colli.gameObject.CompareTag("Batas"))
+        {
+            DestroyTrash();
+        }
     }
 }
