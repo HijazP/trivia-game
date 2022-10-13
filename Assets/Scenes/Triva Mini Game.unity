@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -43}
   m_SizeDelta: {x: 561.157, y: 180.4338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16759553
@@ -290,8 +290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1789.2646, y: 965.7262}
+  m_AnchoredPosition: {x: 0.000017166, y: -0.00090837}
+  m_SizeDelta: {x: 1519.612, y: 899.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42666612
 MonoBehaviour:
@@ -315,10 +315,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -525,6 +525,77 @@ MonoBehaviour:
     - 1 Oktober
     - 1 Desember
     CorrectAnswer: 3
+  - Question: Siapa pencipta lagu Indonesia Raya?
+    Answers:
+    - WR Supratman
+    - Ibu Sud
+    - Ismail Marzuki
+    - A Simanjuntak
+    CorrectAnswer: 1
+  - Question: Tanggal 1 Juni diperingati sebagai hari?
+    Answers:
+    - Kesaktian pancasila
+    - Kelahiran pancasila
+    - Sumpah pemuda
+    - Hari pahlawan
+    CorrectAnswer: 2
+  - Question: Berani membela kebenaran dan keadilan adalah pedoman pengamalan pancasila
+      sila ke?
+    Answers:
+    - Sila pertama
+    - Sila kedua
+    - Sila ketiga
+    - Sila keempat
+    CorrectAnswer: 2
+  - Question: Simbol kepala banteng merupakan lambang sila ke
+    Answers:
+    - Pertama
+    - Kedua
+    - Ketiga
+    - Keempat
+    CorrectAnswer: 4
+  - Question: Padi dan kapas merupakan lambang pancasila sila ke-?
+    Answers:
+    - Kelima
+    - Keempat
+    - Ketiga
+    - Kedua
+    CorrectAnswer: 1
+  - Question: Siapa bapak pendidikan di indonesia?
+    Answers:
+    - Moh Hatta
+    - Ki Hajar Dewantara
+    - Ir. Soekarno
+    - RA Kartini
+    CorrectAnswer: 2
+  - Question: Simbol sila ke-3 pancasila adalah
+    Answers:
+    - Padi dan kapas
+    - Kepala banteng
+    - Bintang
+    - Pohon beringin
+    CorrectAnswer: 3
+  - Question: Hari kartini diperingati setiap tanggal...
+    Answers:
+    - 21 April
+    - 22 April
+    - 21 Juni
+    - 22 Juni
+    CorrectAnswer: 1
+  - Question: Tanggal 2 Mei diperingati sebagai ...
+    Answers:
+    - Hari pendidikan nasional
+    - Hari kelahiran pancasila
+    - Hari buruh nasional
+    - Hari Kartini
+    CorrectAnswer: 1
+  - Question: Monas berada di provinsi mana?
+    Answers:
+    - Jawa barat
+    - Jawa tengah
+    - Jakarta
+    - Yogyakarta
+    CorrectAnswer: 3
   options:
   - {fileID: 101081604}
   - {fileID: 1010505165}
@@ -549,7 +620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &101081604
 GameObject:
@@ -588,8 +659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -443.59937, y: -66.676636}
-  m_SizeDelta: {x: 878.1106, y: 177.8533}
+  m_AnchoredPosition: {x: -380.7979, y: -66.676636}
+  m_SizeDelta: {x: 753.132, y: 177.853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101081606
 MonoBehaviour:
@@ -758,10 +829,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -853,6 +924,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301331135}
   m_CullTransparentMesh: 1
+--- !u!114 &339327655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4681666417120816770, guid: 9cca3feb6c3c9fe4fba27f0233aa6dc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1569477561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8e7bdb9dfc1c443a26071ee927698f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &347237598
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,8 +973,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 438.90002, y: -250}
-  m_SizeDelta: {x: 878.1106, y: 177.8533}
+  m_AnchoredPosition: {x: 376.098, y: -250}
+  m_SizeDelta: {x: 753.132, y: 177.853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347237600
 MonoBehaviour:
@@ -1137,10 +1220,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1216,10 +1299,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1276,10 +1359,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1312,8 +1395,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1762.6, y: 432.33}
+  m_AnchoredPosition: {x: 0.05, y: 1.179}
+  m_SizeDelta: {x: 1414.231, y: 225.996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1010505165
 GameObject:
@@ -1352,8 +1435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -443.6, y: -250}
-  m_SizeDelta: {x: 878.1106, y: 177.8533}
+  m_AnchoredPosition: {x: -380.798, y: -250}
+  m_SizeDelta: {x: 753.132, y: 177.853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010505167
 MonoBehaviour:
@@ -1522,10 +1605,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1621,8 +1704,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1170057632}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1661,8 +1743,8 @@ RectTransform:
   - {fileID: 61767172}
   - {fileID: 381313082}
   - {fileID: 1445537324}
-  m_Father: {fileID: 1149367330}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1698,10 +1780,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1600, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1766,8 +1848,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 743.08, y: -401.81}
-  m_SizeDelta: {x: 303.1111, y: 162.1025}
+  m_AnchoredPosition: {x: 638.34, y: -364}
+  m_SizeDelta: {x: 242.927, y: 115.807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211050032
 MonoBehaviour:
@@ -1951,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 240.33}
+  m_AnchoredPosition: {x: -15, y: 134}
   m_SizeDelta: {x: 1335.6129, y: 300.2238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1445537323
@@ -1990,8 +2072,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 642, y: -410}
-  m_SizeDelta: {x: 533.9673, y: 180.43}
+  m_AnchoredPosition: {x: 589, y: -354}
+  m_SizeDelta: {x: 358.651, y: 124.329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445537325
 MonoBehaviour:
@@ -2037,14 +2119,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 81472046}
-        m_TargetAssemblyTypeName: quizmanager, Assembly-CSharp
-        m_MethodName: keluarminigame
-        m_Mode: 1
+      - m_Target: {fileID: 339327655}
+        m_TargetAssemblyTypeName: JumpScene, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2086,6 +2168,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445537323}
+  m_CullTransparentMesh: 1
+--- !u!1 &1492009108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492009109}
+  - component: {fileID: 1492009111}
+  - component: {fileID: 1492009110}
+  m_Layer: 5
+  m_Name: Skor Anda
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1492009109
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492009108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1617079362}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -22, y: 277}
+  m_SizeDelta: {x: 811.697, y: 339.091}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1492009110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492009108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 110
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 110
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Skor Anda
+--- !u!222 &1492009111
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492009108}
   m_CullTransparentMesh: 1
 --- !u!1 &1513929520
 GameObject:
@@ -2146,10 +2307,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2203,8 +2364,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 438.9, y: -66.676636}
-  m_SizeDelta: {x: 878.1106, y: 177.8533}
+  m_AnchoredPosition: {x: 376.098, y: -66.676636}
+  m_SizeDelta: {x: 753.132, y: 177.853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1567457451
 MonoBehaviour:
@@ -2321,6 +2482,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7787486597848321917, guid: 9cca3feb6c3c9fe4fba27f0233aa6dc0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 67.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787486597848321917, guid: 9cca3feb6c3c9fe4fba27f0233aa6dc0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 52.122
+      objectReference: {fileID: 0}
     - target: {fileID: 7787486599162508052, guid: 9cca3feb6c3c9fe4fba27f0233aa6dc0,
         type: 3}
       propertyPath: m_Name
@@ -2492,10 +2663,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 8
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2541,6 +2712,7 @@ RectTransform:
   m_Children:
   - {fileID: 1412554636}
   - {fileID: 16759552}
+  - {fileID: 1492009109}
   m_Father: {fileID: 1170057632}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2608,10 +2780,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 6
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2692,7 +2864,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864749921
 GameObject:

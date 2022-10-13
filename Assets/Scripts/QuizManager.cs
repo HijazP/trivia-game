@@ -26,7 +26,7 @@ public class QuizManager : MonoBehaviour
     }
 
     void generateQuestion(){
-        if(QnA.Count > 0){
+        if(QnA.Count > 10){
             currentquestion = Random.Range(0, QnA.Count);
             QuestionTxt.text = QnA[currentquestion].Question;
             setAnswer(); 
