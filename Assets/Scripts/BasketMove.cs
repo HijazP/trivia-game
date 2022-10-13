@@ -7,6 +7,7 @@ public class BasketMove : MonoBehaviour
     private Rigidbody2D rb;
     private float speed = 5f;
     private Vector2 movement;
+    public Vector3 post;
 
     void Start()
     {
