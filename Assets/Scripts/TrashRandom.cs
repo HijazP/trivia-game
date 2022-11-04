@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TrashRandom : MonoBehaviour
 {
+    public static TrashRandom instance;
+
     public GameObject[] trashes;
     private float startTime = 3f;
     private float randPost;
@@ -11,6 +13,12 @@ public class TrashRandom : MonoBehaviour
     private float cdTime;
     private int timeInt;
     public Transform post;
+    private bool isPlay = true;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -19,17 +27,25 @@ public class TrashRandom : MonoBehaviour
 
     void Update()
     {
-        if (cdTime <= 0)
+        if (isPlay)
         {
-            randPost = Random.Range(-8f, 8f);
-            randTrash = Random.Range(0, trashes.Length);
-            post.position = new Vector3(randPost, transform.position.y, transform.position.z);
-            Instantiate(trashes[randTrash], post.position, post.rotation);
-            cdTime = Random.Range(0f, 2f);
+            if (cdTime <= 0)
+            {
+                randPost = Random.Range(-3f, 3f);
+                randTrash = Random.Range(0, trashes.Length);
+                post.position = new Vector3(randPost, transform.position.y, transform.position.z);
+                Instantiate(trashes[randTrash], post.position, post.rotation);
+                cdTime = Random.Range(1f, 2f);
+            }
+            else
+            {
+                cdTime -= Time.deltaTime;
+            }
         }
-        else
-        {
-            cdTime -= Time.deltaTime;
-        }
+    }
+
+    public void ChangeStatus()
+    {
+        isPlay = !isPlay;
     }
 }
