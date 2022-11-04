@@ -13751,7 +13751,7 @@ PrefabInstance:
     - target: {fileID: 8191963871930019998, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: scene
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9183256227791019032, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
@@ -17073,8 +17073,8 @@ Transform:
   - {fileID: 848930650}
   - {fileID: 1905585802}
   - {fileID: 1121691540}
-  - {fileID: 976019402}
   - {fileID: 1482821236}
+  - {fileID: 976019402}
   m_Father: {fileID: 512197684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26452,7 +26452,7 @@ PrefabInstance:
     - target: {fileID: 8191963871930019998, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: scene
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9183256227791019032, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
