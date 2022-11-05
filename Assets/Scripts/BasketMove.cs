@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class BasketMove : MonoBehaviour
 {
+    public static BasketMove instance;
+
     private Rigidbody2D rb;
     private float speed = 5f;
     private Vector2 movement;
+    private bool isPlay = true;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -15,7 +23,10 @@ public class BasketMove : MonoBehaviour
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
+        if (isPlay)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+        }
     }
 
     void FixedUpdate()
@@ -41,5 +52,10 @@ public class BasketMove : MonoBehaviour
         }
 
         trash.DestroyTrash();
+    }
+
+    public void ChangeStatus()
+    {
+        isPlay = !isPlay;
     }
 }

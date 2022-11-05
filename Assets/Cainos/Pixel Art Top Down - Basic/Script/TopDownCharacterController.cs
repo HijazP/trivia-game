@@ -9,6 +9,7 @@ namespace Cainos.PixelArtTopDown_Basic
         public float speed;
 
         private Animator animator;
+        private Vector2 movement;
 
         private void Start()
         {
@@ -19,23 +20,26 @@ namespace Cainos.PixelArtTopDown_Basic
         private void Update()
         {
             Vector2 dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.A))
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+
+            if (movement.x < 0)
             {
                 dir.x = -1;
                 animator.SetInteger("Direction", 3);
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (movement.x > 0)
             {
                 dir.x = 1;
                 animator.SetInteger("Direction", 2);
             }
 
-            if (Input.GetKey(KeyCode.W))
+            if (movement.y > 0)
             {
                 dir.y = 1;
                 animator.SetInteger("Direction", 1);
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (movement.y < 0)
             {
                 dir.y = -1;
                 animator.SetInteger("Direction", 0);
