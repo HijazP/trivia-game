@@ -69,8 +69,8 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         FinishPanel.SetActive(true);
         ScoreTxt.text = score + "/100";
-        if (score < 0) tombolnext.SetActive(false); 
-        else tombolnext.SetActive(true); 
+        if (score >= 70) tombolnext.SetActive(true); 
+        else tombolnext.SetActive(false); 
     }
 
 
