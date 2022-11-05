@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    public Text scoreText;
+    public Text[] scoreText;
     private int score = 0;
 
     void Awake()
@@ -17,12 +17,18 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = "SCORE : " + score.ToString();
+        for (int i = 0; i < scoreText.Length ; i++)
+        {
+            scoreText[i].text = "SCORE : " + score.ToString();
+        }
     }
 
     public void AddScore()
     {
         score++;
-        scoreText.text = "SCORE : " + score.ToString();
+        for (int i = 0; i < scoreText.Length; i++)
+        {
+            scoreText[i].text = "SCORE : " + score.ToString();
+        }
     }
 }

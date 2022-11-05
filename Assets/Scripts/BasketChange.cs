@@ -15,7 +15,7 @@ public class BasketChange : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.JoystickButton19))
+        if (Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.JoystickButton19) || Input.GetKeyDown(KeyCode.JoystickButton15))
         {
             baskets[order].SetActive(false);
 

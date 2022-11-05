@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DelayTime : MonoBehaviour
 {
@@ -10,15 +11,25 @@ public class DelayTime : MonoBehaviour
     public Text cdRight;
     public GameObject[] canvasMid;
     public GameObject canvasRight;
+    public GameObject buttonBack;
+    public GameObject buttonPlay;
     private bool isPlay = false;
+    private bool playGame = false;
 
     void Start()
     {
         Time.timeScale = 1f;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(buttonPlay);
     }
 
     void Update()
     {
+        if (!playGame)
+        {
+            return;
+        }
+
         if (cdTime >= 0)
         {
             cdMid.text = ((int)cdTime + 1).ToString();
@@ -37,11 +48,25 @@ public class DelayTime : MonoBehaviour
             else if (isPlay)
             {
                 canvasRight.SetActive(false);
+                canvasMid[2].SetActive(false);
                 canvasMid[1].SetActive(true);
+                canvasMid[3].SetActive(false);
+                TrashRandom.instance.GameOver();
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(buttonBack);
                 TrashRandom.instance.ChangeStatus();
                 BasketMove.instance.ChangeStatus();
-                Time.timeScale = 0f;
             }
         }
+    }
+
+    public void PlayGame()
+    {
+        playGame = true;
+    }
+
+    public void ResetTime()
+    {
+        Time.timeScale = 1f;
     }
 }

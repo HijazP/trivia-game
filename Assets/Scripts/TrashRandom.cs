@@ -14,6 +14,8 @@ public class TrashRandom : MonoBehaviour
     private int timeInt;
     public Transform post;
     private bool isPlay = true;
+    private bool playGame = false;
+    private bool gameOver = false;
 
     void Awake()
     {
@@ -27,19 +29,27 @@ public class TrashRandom : MonoBehaviour
 
     void Update()
     {
-        if (isPlay)
+        if (!playGame)
         {
-            if (cdTime <= 0)
+            return;
+        }
+
+        if (!gameOver)
+        {
+            if (isPlay)
             {
-                randPost = Random.Range(-3f, 3f);
-                randTrash = Random.Range(0, trashes.Length);
-                post.position = new Vector3(randPost, transform.position.y, transform.position.z);
-                Instantiate(trashes[randTrash], post.position, post.rotation);
-                cdTime = Random.Range(1f, 2f);
-            }
-            else
-            {
-                cdTime -= Time.deltaTime;
+                if (cdTime <= 0)
+                {
+                    randPost = Random.Range(-3f, 3f);
+                    randTrash = Random.Range(0, trashes.Length);
+                    post.position = new Vector3(randPost, transform.position.y, transform.position.z);
+                    Instantiate(trashes[randTrash], post.position, post.rotation);
+                    cdTime = Random.Range(1f, 2f);
+                }
+                else
+                {
+                    cdTime -= Time.deltaTime;
+                }
             }
         }
     }
@@ -47,5 +57,15 @@ public class TrashRandom : MonoBehaviour
     public void ChangeStatus()
     {
         isPlay = !isPlay;
+    }
+
+    public void PlayGame()
+    {
+        playGame = true;
+    }
+
+    public void GameOver()
+    {
+        gameOver = true;
     }
 }
