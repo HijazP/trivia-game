@@ -12,15 +12,15 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: trivia-game
+  companyName: SANATA
+  productName: Smart Trasher SANATA (Sadina Widyanata)
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
   m_SplashScreenDrawMode: 0
   m_SplashScreenBackgroundAnimationZoom: 1
@@ -39,7 +39,21 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: 68547efa35d62ab4db351fad8ae824f9, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 4a339813e03a216498d1d035a242f17a, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 534483c82da471749983082de4e74381, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 6adbe3ff3140a624fabb5373dda83b99, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: af59ea3ee3d73d748adac28db37a95e5, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: b9cccdacb894ac5438609a5c705dad38, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 3c972dac91c4a9546a9daf7771ab30c5, type: 3}
+    duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -134,7 +148,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 1.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -153,6 +167,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.ArunikA.SmartTrasherSANATASadinaWidyanata
     Standalone: com.Company.ProductName
   buildNumber:
     Standalone: 0
@@ -266,7 +281,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 65891098f3455984eaf4a2aa2ed4284a, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:

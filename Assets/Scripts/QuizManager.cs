@@ -46,8 +46,9 @@ public class QuizManager : MonoBehaviour
 
             if(QnA[currentquestion].CorrectAnswer == i+1){
                 options[i].GetComponent<AnswerQuiz>().isCorrect = true;
-            } 
+            }
         }
+        QuizButton.instance.Answer();
     } 
 
     public void correct(){
@@ -69,8 +70,17 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         FinishPanel.SetActive(true);
         ScoreTxt.text = score + "/100";
-        if (score >= 70) tombolnext.SetActive(true); 
-        else tombolnext.SetActive(false); 
+        if (score >= 70)
+        {
+            tombolnext.SetActive(true);
+            QuizButton.instance.Done();
+        }
+        else
+        {
+            tombolnext.SetActive(false);
+            QuizButton.instance.Retry();
+        }
+        
     }
 
 
